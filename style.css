@@ -1,0 +1,45 @@
+.box {
+    display: flex;
+    -ms-flex-direction: column;
+    justify-content: space-around;
+}
+.list1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border-style: dotted;
+    background-color: grey;
+}
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: pink;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list1 {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 25%;
+      }
+ 
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: azure;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20vw;
+    }
+    .list1 {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+      }
+  }
